@@ -1,0 +1,81 @@
+/* reset */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:checked {
+  outline: none;
+  border: none;
+}
+
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  border: none;
+}
+
+/* Globals */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+main {
+  flex: 1;
+}
