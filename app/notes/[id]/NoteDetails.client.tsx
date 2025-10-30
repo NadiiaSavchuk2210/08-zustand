@@ -34,7 +34,7 @@ const NoteDetailsClient = () => {
                 </div>
                 <p className={css.content}>{note.content}</p>
                 <p className={css.date}>{formattedDate}</p>
-                <Link href='/notes'>&#8701; View all notes</Link>
+                <Link href='/notes/filter/all'>&#8701; View all notes</Link>
             </div>
         </div>
     )
