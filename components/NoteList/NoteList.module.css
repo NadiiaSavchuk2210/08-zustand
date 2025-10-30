@@ -1,7 +1,7 @@
 .list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 6px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -56,9 +56,10 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   margin-top: auto;
+  gap: 10px;
 }
 
 .tag {
@@ -91,4 +92,16 @@
 
 .link:hover {
   background-color: #0b5ed7;
+}
+
+@media (min-width: 425px) {
+  .list {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
 }

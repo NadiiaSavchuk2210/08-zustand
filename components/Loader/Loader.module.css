@@ -81,8 +81,8 @@
 
 /* Loader Progress */
 .loaderContainer:has(.loaderProgress) {
-  top: 86%;
-  left: 15%;
+  top: 80%;
+  right: 0%;
 }
 
 .loaderProgress {
