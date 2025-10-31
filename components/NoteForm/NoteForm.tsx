@@ -11,10 +11,10 @@ import { validateForm, validationSchema } from './NoteForm-validation';
 import { useRouter } from 'next/navigation';
 import { useNoteDraftStore } from '@/lib/store/noteStore';
 
-type Errors = {
-    title?: '',
-    content?: '',
-    tag?: ''
+interface Errors {
+    title?: string,
+    content?: string,
+    tag?: string
 }
 
 const initialErrors: Errors = {
@@ -111,7 +111,7 @@ export default function NoteForm() {
                 <button
                     type="submit"
                     className={css.submitButton}
-                    disabled={false}
+                    disabled={isPending}
                 >
                     {isPending ? 'Creating...' : 'Create note'}
                 </button>
